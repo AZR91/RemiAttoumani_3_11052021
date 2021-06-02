@@ -283,6 +283,7 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
 }
+
 .restaurant__cards {
     display: -ms-grid;
     display:grid;
