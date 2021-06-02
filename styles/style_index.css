@@ -414,5 +414,191 @@ body {
     stroke: none;
 }
 
+.restaurant__block .heart-empty {
+    width: 50px;
+    position: relative;
+}
 
+.restaurant__block .heart-empty:hover {
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
 
+.footer {
+    width: 100%;
+    background-color: #353535;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer__bloc {
+    display: inline;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer__bloc .logo {
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.footer__bloc-links {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+}
+.footer__bloc-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer__bloc-links:hover .footer__bloc-link__title{
+    text-decoration: underline;
+}
+
+.footer__bloc-link i {
+    margin-right: 7px;
+}
+
+.footer__bloc-link__title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+    visibility: visible;
+    opacity: 0.9;
+    }
+    70% {
+    opacity: 0.9;
+    }
+    100% {
+    opacity: 0;
+    visibility: hidden;
+    }
+}
+
+@keyframes spinner {
+    0% {
+    visibility: visible;
+    opacity: 0.9;
+    }
+    70% {
+    opacity: 0.9;
+    }
+    100% {
+    opacity: 0;
+    visibility: hidden;
+    }
+}
+
+@-webkit-keyframes spinner-border {
+    0% {
+    visibility: visible;
+    opacity: 1;
+    }
+    70% {
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+    }
+}
+
+@keyframes spinner-border {
+    0% {
+    visibility: visible;
+    opacity: 1;
+    }
+    70% {
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .restaurant__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    }
+
+    .process__step {
+        width: 100%;
+    }
+
+.process__steps {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 100%;
+}
+
+.footer__bloc {
+    margin-bottom: 15px;
+}
+
+.footer__bloc-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 900px;
+}
+}
+
+/*# sourceMappingURL=style_index.css.map */
