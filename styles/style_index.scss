@@ -276,3 +276,112 @@ body {
         }
     }
 }
+.footer {
+    width: 100%;
+    background-color: #353535;
+    @include flexbox-center;
+    &__bloc {
+        display: inline;
+        padding: 0 40px;
+        width: 100%;
+        max-width: 1200px;
+        & .logo {
+            font-family: 'Shrikhand', cursive;
+            color: white;
+            font-size: 20px;
+            padding: 15px 0;
+        }
+        &-links {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+        }
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            color: white;
+            height: 30px;
+            cursor: pointer;
+            &:hover .footer__bloc-link__title {
+                text-decoration: underline;
+            }
+            & i {
+            margin-right: 7px;
+            }
+            &__title {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// Animation Loading spinner //
+
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes spinner-border {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+// Responsive //
+
+@media screen and (min-width: 800px) {
+    .restaurant {
+        &__cards {
+            display: grid;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+    .process__step {
+        width: 100%;
+    }
+    .process__steps {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footer {
+        &__bloc {
+            margin-bottom: 15px;
+            &-links {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                max-width: 900px;
+            }
+        }
+    }
+}
+
+
+
