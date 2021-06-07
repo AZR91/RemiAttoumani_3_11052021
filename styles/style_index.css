@@ -481,7 +481,7 @@ body {
     cursor: pointer;
 }
 
-.footer__bloc-links:hover .footer__bloc-link__title{
+.footer__bloc-links:hover .footer__bloc-link__title {
     text-decoration: underline;
 }
 
