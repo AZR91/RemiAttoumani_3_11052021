@@ -347,10 +347,6 @@ header .header__logo a {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
     }
-    100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
-    }
 }
 
 @-webkit-keyframes opacity {
